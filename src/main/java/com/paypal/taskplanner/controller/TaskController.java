@@ -12,7 +12,8 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
-
+import org.springframework.web.bind.annotation.CrossOrigin;
+@CrossOrigin(origins = "*",allowedHeaders = "*")
 @RestController
 @RequestMapping("/api/v1/task")
 public class TaskController {
